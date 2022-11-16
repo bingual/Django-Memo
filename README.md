@@ -1,2 +1,2 @@
 # Programming Memo
-Django, Django-Reset-framework, React, Ajax
+Django, Django-Rest-framework, React, Ajax
