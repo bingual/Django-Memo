@@ -1,2 +1,2 @@
-# Django-Memo
-Django와 관련된 메모
+# Programming Memo
+Django, Django-Reset-framework, React, Ajax
