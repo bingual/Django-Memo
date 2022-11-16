@@ -22,7 +22,7 @@ git status
 git add <폴더/파일경로>
 	: 현재 상태 추가
 	
-git commit -m "입력할메세지"
+git commit -a -m "입력할메세지"
 	: 현재 상태 저장
 	
 git remote add origin URL주소

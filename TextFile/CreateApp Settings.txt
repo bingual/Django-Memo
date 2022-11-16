@@ -54,13 +54,16 @@
 	  urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 		
 		
-8. requiredment 폴더를 만들고 commoon, dev, prod 개발환경을 분리구축해준다.
+8. requiredments 폴더를 만들고 commoon, dev, prod 개발환경을 분리구축해준다.
 
-	# requiredment
-		# common.txt : 개발환경에 필요한 라이브러리들을 작성
-		# prod.txt, dev.txt 	 : -r common.txt
+	# requiredments
+		# common.txt 
+			: 개발환경에 필요한 라이브러리들을 작성
+		# prod.txt, dev.txt 	 
+			: -r common.txt
 
-	# requirements.txt : -r requirements/prod.txt
+	# requirements.txt 
+		: -r requirements/prod.txt
 	
 	
 9. settings를 분리하여 Developer, Production 환경을 분리구축한다.
@@ -70,9 +73,11 @@
 	  
 	# dev.py, prod,py : from .common import *
 	
-	# asgi,wsgi : os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'askcompany.settings.prod')
+	# asgi,wsgi 
+		: os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'askcompany.settings.prod')
 	
-	# manage.py : os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'askcompany.settings.dev')
+	# manage.py 
+		: os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'askcompany.settings.dev')
 	
 	
 10. BASE DIRECTORY 경로를 설정해준다.

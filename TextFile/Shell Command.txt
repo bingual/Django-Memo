@@ -6,7 +6,7 @@ cd <프로젝트명>
 conda env list
 	: 가상환경 목록
 	
-conda remove --name <가상환경이름>
+conda env remove --name <가상환경이름>
 	: 가상환경 삭제
 	
 conda craete --name <가상환경이름> python=3.9	
