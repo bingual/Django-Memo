@@ -1,2 +1,2 @@
 # Django-Memo
-Django와 관련되 메모
+Django와 관련된 메모
