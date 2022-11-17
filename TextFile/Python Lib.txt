@@ -40,9 +40,13 @@ pip install djangorestframwork~=3.11.0
 	: django 프레임워크
 	: https://www.django-rest-framework.org/#installation
 	
+pip install httpie
+	: HTTP 요청시 사용
+	
 humanize
 	: django의 내장된 라이브러리. 사용자가 알기쉽게끔 언어를 변환해준다.
 	: https://docs.djangoproject.com/en/4.1/ref/contrib/humanize/
+	
 	
 
 /* 

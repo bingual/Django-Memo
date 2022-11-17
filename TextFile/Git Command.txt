@@ -44,9 +44,15 @@ git status로 생성/수정된 파일을 알아냄 > git add로 생성/수정된
 	
 [ 알아두면 좋은 git 명렁어 ]	
 
-git -b <브런치> --single-branch <URL주소>
+rm <삭제할 파일>
+	: git에서 해당하는 파일 삭제
+
+git clone <URL주소> <디렉토리명>
+	: 원격저장소에서 로컬저장소로 브런치의 파일을 받을때 사용함.
+
+git clone -b <브런치> --single-branch <URL주소> <디렉토리명>
 	: 원격저장소에서 로컬저장소로 원하는 브런치의 파일을 받을때 사용함.
-	
+		
 git log [<options>] [<revision range>] [[--] <path>…​]
 	: 이력 확인
 
