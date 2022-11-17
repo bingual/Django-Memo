@@ -15,7 +15,7 @@ conda craete --name <가상환경이름> python=3.9
 conda activate <가상환경이름>					
 	: 가상환경 접속
 	
-pip install "django~=3.0.0"		 			
+pip install django~=3.0.0		 			
 	: 장고설치
 
 django-admin startproject <프로젝트명> 			
@@ -26,9 +26,6 @@ python manage.py migrate
 
 python manage.py createsuperuser 	 		
 	: 계정생성
-
-python manage.py startapp <앱이름>		  		
-	: 앱생성 (앱생성후 settings.INSTALLED_APPS에 등록시켜줘야한다.)
 
 python manage.py runserver 			 		
 	: 서버실행

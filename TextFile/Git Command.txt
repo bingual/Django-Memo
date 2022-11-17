@@ -28,9 +28,6 @@ git commit -a -m "입력할메세지"
 git remote add origin URL주소
 	: url주소를 origin 변수에저장
 	
-git pull origin <브런치> 
-	: 원격저장소에서 로컬저장소로 소스 불러오기
-	
 git push -u origin <브런치> 
 	: 저장소로 푸쉬(오류가나면 -u는 강제푸쉬 or +브런치이름) 
 	: 예) git push origin +main
@@ -46,12 +43,15 @@ git status로 생성/수정된 파일을 알아냄 > git add로 생성/수정된
 
 rm <삭제할 파일>
 	: git에서 해당하는 파일 삭제
+	
+git pull origin <브런치> 
+	: 원격저장소에서 로컬저장소로 소스 불러오고 병합
 
 git clone <URL주소> <디렉토리명>
-	: 원격저장소에서 로컬저장소로 브런치의 파일을 받을때 사용함.
+	: 원격저장소에서 로컬저장소로 브런치의 파일을 복제해 받을때 사용함.
 
 git clone -b <브런치> --single-branch <URL주소> <디렉토리명>
-	: 원격저장소에서 로컬저장소로 원하는 브런치의 파일을 받을때 사용함.
+	: 원격저장소에서 로컬저장소로 원하는 브런치의 파일을 복제해 받을때 사용함.
 		
 git log [<options>] [<revision range>] [[--] <path>…​]
 	: 이력 확인

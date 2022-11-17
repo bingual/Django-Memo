@@ -1,10 +1,10 @@
 # askcompany는 project를 생성했을때 이름과 동일한 GeneralApp이다.
 
-1. TEMPLATES, STATIC, MEMDIA 경로를 설정해준다.
+1. settings.py에서 TEMPLATES, STATIC, MEMDIA 경로를 설정해준다.
 
-	# TEMPLATES = 'DIRS': [
-            os.path.join(BASE_DIR, 'askcompany', 'templates'),
-        ],
+	# TEMPLATES = [
+            'DIRS': [os.path.join(BASE_DIR, 'askcompany', 'templates')],
+        ]
 	
 	# STATIC_URL = '/static/'
 	  STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -17,7 +17,7 @@
 	  urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 		
 		
-2. requiredments 폴더를 만들고 commoon, dev, prod 개발환경을 분리구축해준다.
+2. requiredments 폴더를 만들고 commoon, dev, prod를 생성해 개발환경을 분리구축해준다.
 
 	# requiredments
 		# common.txt 
@@ -31,16 +31,16 @@
 	
 3. settings를 분리하여 Developer, Production 환경을 분리구축한다.
 
-	# 별도경로의 settings 폴더를 만들고 settings.py 파일이동 
+	# 별도경로의 settings 폴더를 만들고 settings.py 파일이동후 파일명변경
 	  예) : Project/askcompany/settings/common.py
 	  
-	# dev.py, prod,py 
+	# dev.py, prod.py / settings 폴더내에 생성
 		: from .common import *
 	
-	# asgi,wsgi 
+	# asgi,wsgi 수정
 		: os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'askcompany.settings.prod')
 	
-	# manage.py 
+	# manage.py 수정
 		: os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'askcompany.settings.dev')
 	
 	
@@ -68,7 +68,7 @@
 7. settings INSTALLED_APPS에다가 만든앱을 추가해준다.
 
 	예) : INSTALLED_APPS = [
-			yeon',
+			'yeon',
 		]
 		
 		
