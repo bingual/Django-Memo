@@ -14,7 +14,8 @@
 		
 	# MEDIA_URL = '/media/'
 	  MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-	  urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+	  askcompany/urls.py에 추가
+		: urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 		
 		
 2. requiredments 폴더를 만들고 commoon, dev, prod를 생성해 개발환경을 분리구축해준다.
