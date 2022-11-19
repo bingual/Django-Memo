@@ -4,21 +4,21 @@ request.headers.get('x-requested-with') == 'XMLHttpRequest'
 <settings.py>
 # paging
 
-    'PAGE_SIZE': 3, <페이지에 보여줄 개수>
+    'PAGE_SIZE': 3,	   : <페이지에 보여줄 개수>
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
 
 
 # permission
 
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated' <인증된 요청에 한해서>
+        'rest_framework.permissions.IsAuthenticated',	: <인증된 요청에 한해서>
     ],
 
 
 # throttle
 
     'DEFAULT_THROTTLE_CLASSES': [
-        'rest_framework.throttling.UserRateThrottle', <유저마다 Rate 제한>
+        'rest_framework.throttling.UserRateThrottle',	: <유저마다 Rate 제한>
     ],
     'DEFAULT_THROTTLE_RATES': {
         'user': '10/m'
@@ -27,6 +27,17 @@ request.headers.get('x-requested-with') == 'XMLHttpRequest'
 # token
 
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',			: <세션인증>
+        'rest_framework.authentication.TokenAuthentication',			: <토큰인증>
+		'rest_framework_simplejwt.authentication.JWTAuthentication', 	: <simplejwt 토큰인증>
     ],
+	
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),	: <토큰 유효기간>
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),	: <재발급토큰 유효기간>
+    'ROTATE_REFRESH_TOKENS': False,					: <재발급토큰 반환여부>
+    'ALGORITHM': 'HS256',							: <토큰 서명/확인>
+    'SIGNING_KEY': SECRET_KEY						: <생성토큰 서명키>
+}
+SIMPLE_JWT 설정 공식문서
+	# https://django-rest-framework-simplejwt.readthedocs.io/en/latest/settings.html

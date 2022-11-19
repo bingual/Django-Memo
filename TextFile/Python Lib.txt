@@ -13,7 +13,7 @@ pip install pillow
 	
 	<settings에서 설정>
 	MEDIA_URL = '/url문자열/'
-	MEDIA_ROOT = os.path.join(BASE_DIR, '디렉토리명')
+	MEDIA_ROOT = BASE_DIR / '디렉토리명'
 	
 	<프로젝트 urls.py에서 설정>
 	urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
@@ -39,6 +39,10 @@ pip install django-taggit
 pip install djangorestframwork~=3.11.0
 	: django 프레임워크
 	: https://www.django-rest-framework.org/#installation
+	
+pip install djangorestframework-simplejwt
+	: Simple JSON Web Token 인증시 사용
+	: https://django-rest-framework-simplejwt.readthedocs.io/en/latest/getting_started.html#installation
 	
 pip install httpie
 	: HTTP 요청시 사용
