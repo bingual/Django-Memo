@@ -89,6 +89,7 @@ GET, POST, PATCH, PUT ,DELETE
 	
 쉘> http POST :8000 message="hello world" 			
 	# 새 포스팅 등록
+	
 쉘> http GET :8000/1/ 								
 	# 1번 포스팅 조회
 	
