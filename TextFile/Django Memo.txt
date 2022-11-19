@@ -1,3 +1,32 @@
 request.headers.get('x-requested-with') == 'XMLHttpRequest'
 	: view에서 ajax을 요청했을때 사용함
 	
+<settings.py>
+# paging
+
+    'PAGE_SIZE': 3, <페이지에 보여줄 개수>
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+
+
+# permission
+
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated' <인증된 요청에 한해서>
+    ],
+
+
+# throttle
+
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.UserRateThrottle', <유저마다 Rate 제한>
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'user': '10/m'
+    }
+	
+# token
+
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],

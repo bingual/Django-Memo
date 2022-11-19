@@ -24,6 +24,7 @@ git add <폴더/파일경로>
 	
 git commit -a -m "입력할메세지"
 	: 현재 상태 저장
+	: -a add와 commit을 동시에
 	
 git remote add origin URL주소
 	: url주소를 origin 변수에저장
