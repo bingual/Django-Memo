@@ -1,0 +1,45 @@
+yarn add --dev 팩키지명
+	: 리액트 프로젝트 설치
+
+yarn add --dev sass
+	: CSS코드를 모듈로 관리하는 편리한 라이브러리
+	
+yarn add --dev styled-component
+	: CSS코드를 JavaScript 코드로 관리할 수 있다는 장점
+
+yarn add immer
+	: 불변객체를 손쉽게 다루게 해줌
+	
+yarn add antd
+	: 편리한 프론트엔드 디자인 적용 라이브러리
+	: 링크 https://ant.design/
+	: @import 'antd/dist/reset.css'; 임포트 필요(css에서만 @붙임)
+	
+--------------------------------------------------------------
+	
+.eslintignore
+	src/registerServiceWorker.js
+	src/**/__tests__/**
+		: 불필요한 파일 제외
+		
+.prettierrc
+	{
+	"arrowParens": "always",
+	"orderedImports": true,
+	"printWidth": 80,
+	"singleQuote": true,
+	"semi": true,
+	"tabWidth": 2,
+	"trailingComma": "all",
+	"useTabs": false
+	}
+		: 저장/수정시 자동서식정리 설정
+		
+.jsoncofig.json
+	{
+    "compilerOptions": {
+        "baseUrl": "src"
+    },
+    "include": ["src"]
+	}
+		: 절대경로를 src 기준으로 맞춤
