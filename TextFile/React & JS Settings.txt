@@ -7,7 +7,7 @@ yarn create react-app 팩키지명
 yarn add --dev 팩키지명
 	: 리액트 프로젝트 설치
 
-yarn add --dev sass
+yarn add --dev node-sass
 	: CSS코드를 모듈로 관리하는 편리한 라이브러리
 	
 yarn add --dev styled-component

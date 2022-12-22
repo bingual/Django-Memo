@@ -36,7 +36,7 @@ pip install django-imagekit
 pip install django-taggit
 	: 태그 세부설정
 	
-pip install djangorestframwork~=3.11.0
+pip install djangorestframework~=3.11.0
 	: django 프레임워크
 	: https://www.django-rest-framework.org/#installation
 	
@@ -47,6 +47,10 @@ pip install djangorestframework-simplejwt
 pip install httpie
 	: HTTP 요청시 사용
 	: https://httpie.io/docs/cli/--path-as-is
+	
+pip install django-cors-headers
+	:  다른 도메인에서 리소스에 액세스하기 위해 사용
+	: https://pypi.org/project/django-cors-headers/
 
 humanize
 	: django의 내장된 라이브러리. 사용자가 알기쉽게끔 언어를 변환해준다.
