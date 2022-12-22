@@ -1,3 +1,9 @@
+npm install --global yarn
+	: yarn 설치
+
+yarn create react-app 팩키지명
+	: 간편한 리액트 프로젝트 설치
+
 yarn add --dev 팩키지명
 	: 리액트 프로젝트 설치
 
@@ -10,10 +16,19 @@ yarn add --dev styled-component
 yarn add immer
 	: 불변객체를 손쉽게 다루게 해줌
 	
+yarn add axios
+	: node & react에서 http 요청시 사용
+	
 yarn add antd
 	: 편리한 프론트엔드 디자인 적용 라이브러리
 	: 링크 https://ant.design/
 	: @import 'antd/dist/reset.css'; 임포트 필요(css에서만 @붙임)
+	
+yarn add query-string
+	: 문자열을 객체로 변환해주는 라이브러리
+	
+[ promise 설명 링크 ]
+https://ko.javascript.info/promise-basics#ref-1264
 	
 --------------------------------------------------------------
 	
