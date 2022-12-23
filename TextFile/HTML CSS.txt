@@ -1,0 +1,25 @@
+justify-content: center; 
+	/* 중앙 주위에 아이템을 패킹 */
+	
+justify-content: start; 
+	/* 처음부터 아이템 패킹 */
+	
+justify-content: end; 
+	/* 끝에서부터 아이템 패킹 */
+	
+justify-content: flex-start; 
+	/* 시작부터 플렉스 아이템을 패킹 */
+	
+justify-content: flex-end; 
+	/* 끝에서 플렉스 아이템을 패킹 */
+	
+justify-content: left 
+	/* 왼쪽부터 아이템 패킹 */
+	
+justify-content: right 
+	/* 오른쪽부터 아이템 패킹 */
+	
+justify-content: space-between
+	/* 항목을 균등하게 분배
+	첫 번째 항목은 시작과 동일합니다.
+	마지막은 끝과 같은 높이입니다 */
